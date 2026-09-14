@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: rgba(43, 1, 1, 0.966);
+            background-size: auto;
+        }
+        marquee{
+            position: relative;
+            background-color: rgba(43, 1, 1, 0.966);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 5px;
+            z-index: 1000;
+        }
+        hii{
+            text-shadow: 0px 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-amber-100">
+        <div class="flex bg-amber-100">
+            <img src="co.png" alt="coffee" class="ml-5 w-30 h-20 object-cover">
+            <div class="mx-50 my-auto">
+                <a href="index.html"
+                    class="text-red-950 mx-5 text-lg fold-semibold hover:font-semibold cursor-pointer">Home</a>
+                <a href="menu.html"
+                    class="text-red-950  mx-5 text-lg fold-semibold hover:font-semibold cursor-pointer">Menu</a>
+                <a href="reservation.html"
+                    class="text-red-950 mx-5 text-lg fold-semibold hover:font-semibold cursor-pointer">Reservation</a>
+                <a href="contact.html"
+                    class="text-red-950 mx-5  text-lg fold-semibold hover:font-semibold cursor-pointer">Contact</a>
+                <a href="login.html"
+                    class="text-red-950 mx-5 text-lg fold-semibold hover:font-semibold cursor-pointer">login</a>
+            </div>
+            
+            <div class="mt-6 mr-10 h-9 border-2 border-red-950 rounded-2xl px-3 pt-1">
+                <input type="text" placeholder="search...." class="placeholder:text-red-950 font-semibold outline-none">
+                <i class="fa fa-search" style="color: rgb(27, 0, 0); "></i>
+            </div>
+        </div>
+    </div>
+    <div>
+    <marquee behavior="scroll" direction="" scrollamount="10" class="text-amber-100">ThankYou for selecting us. You are on TIME 🎉!! Grab our Special offer now ! Today; we are having a B1G1 OFF on any cofee you buy.  "ENJOY YOUR COFFEE" !!</marquee>
+    </div>
+    <div class="max-w-5xl mx-auto p-8">
+        <h1 id="hii" class="text-4xl font-bold text-amber-100 text-center mb-10"> Our Menu</h1>
+
+        <!-- COFFEE -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-serif text-amber-100 mb-6 border-b-2 border-amber-100 pb-2"> COFFEE </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Espresso</h3>
+                        <p class="text-gray-600 mt-2 ml-2">A bold and concentrated shot of rich coffee. </p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹100 </p>
+                    </div>
+                    <div class="border-1 border-red-950">
+                        <img src="expresso.png" alt="" height="150" width="150">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Cappuccino</h3>
+                        <p class="text-gray-600 mt-2 ml-2">Smooth espresso blended with steamed milk and creamy foam.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹130</p>
+                    </div>
+                    <div class="border-1 border-red-950">
+                        <img src="cappuccino.png" alt="" height="150" width="206">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Café Latte</h3>
+                        <p class="text-gray-600 mt-2 ml-2">A creamy combination of espresso and silky steamed milk.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹150 </p>
+                    </div>
+                    <div class="border-1 border-red-950 ">
+                        <img src="cafelatte.png" alt="" height="150" width="200">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Americano </h3>
+                        <p class="text-gray-600 mt-2 ml-2">Espresso mixed with hot water for a smooth, bold taste.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹120 </p>
+                    </div>
+                    <div class="border-1 border-red-950 h-32 w-54">
+                        <img src="ameri.png" alt="">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Mocha</h3>
+                        <p class="text-gray-600 mt-2 ml-2">A delicious blend of espresso, chocolate, and creamy milk.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹180 </p>
+                    </div>
+                    <div class="border-1 border-red-950 h-30">
+                        <img src="mocha.png" alt="" height="150" width="205">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Caramel Macchiato</h3>
+                        <p class="text-gray-600 mt-2 ml-2">Creamy coffee layered with milk, espresso, and sweet caramel.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹200 </p>
+                    </div>
+                    <div class="border-1 border-red-950 ">
+                        <img src="caramel.png" alt="" height="150" width="202">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Cold Brew</h3>
+                        <p class="text-gray-600 mt-2 ml-2">Slowly brewed cold coffee with a smooth and refreshing taste.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹180 </p>
+                    </div>
+                    <div class="border-1 border-red-950 ">
+                        <img src="ColdBrew.jpeg" alt="" height="150" width="202">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Vanilla Latte</h3>
+                        <p class="text-gray-600 mt-2 ml-2">Creamy latte infused with a sweet and delicate vanilla flavor.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹200 </p>
+                    </div>
+                    <div class="border-1 border-red-950 h-33">
+                        <img src="Vanillalatte.png" alt="" height="150" width="202">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Hazelnut Latte</h3>
+                        <p class="text-gray-600 mt-2 ml-2">Rich espresso and milk enhanced with a warm nutty hazelnut flavor.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹220 </p>
+                    </div>
+                    <div class="border-1 border-red-950 h-31">
+                        <img src="Hazelnutlatte.png" alt="" height="150" width="202">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SNACKS -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-serif text-amber-100 mb-6 border-b-2 border-amber-100 pb-2"> Cakes & Pastries </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Croissant</h3>
+                        <p class="text-gray-600 mt-2 ml-2">Buttery, flaky, and freshly baked French pastry.</p>
+                        <p class="text-gray-600 mt-2 ml-2"> • Plane butter<span class="text-red-900 font-bold ml-36">₹70 </span></p>
+                        <p class="text-gray-600 mt-2 ml-2">• Chocolate Croissant <span class="text-red-900 font-bold ml-22"> ₹90 </span></p>
+                        <p class="text-gray-600 mt-2 ml-2"> • Almond / Hazelnut Croissant <span class="text-red-900 font-bold ml-6"> ₹110 </span></p>
+                    </div>
+                    <div class="border-1 border-red-950 mt-15 h-33">
+                        <img src="crossand.png" alt="" width="148">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Muffin </h3>
+                        <p class="text-gray-600 mt-2 ml-2">Soft and fluffy baked treat with delicious flavors.</p> <br>
+                        <p class="text-gray-600 mt-2 ml-2"> • Chocolate muffin<span class="text-red-900 font-bold ml-15"> ₹70 </span></p>
+                        <p class="text-gray-600 mt-2 ml-2">• Vannila choco muffin <span class="text-red-900 font-bold ml-8"> ₹80 </span></p>
+                    </div>
+                    <div class="border-1 border-red-950 mt-10">
+                        <img src="muffin.png" alt="" height="150" width="161">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Danish Pastry</h3>
+                        <p class="text-gray-600 mt-2 ml-2">Sweet, layered pastry with a soft and buttery texture.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹50 </p>
+                    </div>
+                    <div class="border-1 border-red-950 ">
+                        <img src="danish.png" alt="" height="150" width="201">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Cinnamon Roll</h3>
+                        <p class="text-gray-600 mt-2 ml-2">Soft pastry swirled with cinnamon and sweet icing.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹80 </p>
+                    </div>
+                    <div class="border-1 border-red-950 h-33 w-42">
+                        <img src="cinammon.png" alt="" width="136">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Chocolate Cake</h3>
+                        <p class="text-gray-600 mt-2 ml-2">Rich and moist chocolate cake with creamy frosting.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹60 </p>
+                    </div>
+                    <div class="border-1 border-red-950 h-34">
+                        <img src="chocolatecake.png" alt="" height="150" width="170">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Cheesecake </h3>
+                        <p class="text-gray-600 mt-2 ml-2">Creamy and smooth dessert with a crunchy biscuit base.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹90 </p>
+                    </div>
+                    <div class="border-1 border-red-950 h-31">
+                        <img src="cheese.png" alt="" height="150" width="237">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Brownie</h3>
+                        <p class="text-gray-600 mt-2 ml-2">Rich, fudgy chocolate treat with a soft center.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹50 </p>
+                    </div>
+                    <div class="border-1 border-red-950 ">
+                        <img src="brownie.png" alt="" height="150" width="150">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Cookies</h3>
+                        <p class="text-gray-600 mt-2 ml-2">Freshly baked, crunchy cookies with a sweet taste.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹40 </p>
+                    </div>
+                    <div class="border-1 border-red-950 h-34">
+                        <img src="cookie.png" alt="" height="150" width="174">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Cupcake</h3>
+                        <p class="text-gray-600 mt-2 ml-2"> A small, fluffy cake topped with creamy frosting</p>
+                        <p class="text-gray-600 mt-2 ml-2"> • Vanila<span class="text-red-900 font-bold ml-36"> ₹60</span></p>
+                        <p class="text-gray-600 mt-2 ml-2">• Hazelnut <span class="text-red-900 font-bold ml-31"> ₹65</span></p>
+                        <p class="text-gray-600 mt-2 ml-2"> • Pistachio <span class="text-red-900 font-bold ml-31"> ₹70 </span></p>
+                        <p class="text-gray-600 mt-2 ml-2"> • CaramelCheese <span class="text-red-900 font-bold ml-19"> ₹80 </span></p>
+                    </div>
+                    <div class="border-1 border-red-950 mt-20 h-33">
+                        <img src="cup.png" alt="" width="173">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SAVORY  -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-serif text-amber-100 mb-6 border-b-2 border-amber-100 pb-2"> Savory Snacks </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Sandwich</h3>
+                        <p class="text-gray-600 mt-2 ml-2">Fresh fillings layered between toasted bread slices.</p>
+                        <p class="text-gray-600 mt-2 ml-2">• Veg Sandwich <span class="text-red-900 font-bold ml-28"> ₹80</span></p>
+                        <p class="text-gray-600 mt-2 ml-2"> • Chicken Sandwich <span class="text-red-900 font-bold ml-20"> ₹100</span></p>
+                    </div>
+                    <div class="border-1 border-red-950 mt-10">
+                        <img src="sandwitch.png" alt="" height="150" width="170">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Garlic Bread</h3>
+                        <p class="text-gray-600 mt-2 ml-2">Crispy toasted bread flavored with garlic and butter.</p>
+                        <p class="text-gray-600 mt-2 ml-2">• Classic <span class="text-red-900 font-bold ml-28"> ₹80</span></p>
+                        <p class="text-gray-600 mt-2 ml-2"> • Cheesy <span class="text-red-900 font-bold ml-27"> ₹100</span></p>
+                    </div>
+                    <div class="border-1 border-red-950 mt-7">
+                        <img src="garlicbread.png" alt="" height="150" width="219">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">French Fries</h3>
+                        <p class="text-gray-600 mt-2 ml-2">Crispy golden potato fries served hot and fresh.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹100 </p>
+                    </div>
+                    <div class="border-1 border-red-950 ">
+                        <img src="frenchfries.png" alt="" height="150" width="150">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Chicken Wrap </h3>
+                        <p class="text-gray-600 mt-2 ml-2">Juicy chicken and fresh vegetables wrapped in a soft tortilla.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹150 </p>
+                    </div>
+                    <div class="border-1 border-red-950 h-37 w-51">
+                        <img src="chickenwrap.png" alt="" width="139">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Nuggets </h3>
+                        <p class="text-gray-600 mt-2 ml-2">Crispy golden bites with a tenderand filling.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹120 </p>
+                    </div>
+                    <div class="border-1 border-red-950 h-33 w-36">
+                        <img src="nuggets.png" alt="" width="134">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEA -->
+        <section class="mb-12">
+
+            <h2 class="text-3xl font-bold text-amber-100 mb-6 border-b-2 border-amber-100 pb-2">Tea</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Classic Black Tea</h3>
+                        <p class="text-gray-600 mt-2 ml-2">A rich and refreshing traditional tea with a bold flavor.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹130 </p>
+                    </div>
+                    <div class="border-1 border-red-950 h-38">
+                        <img src="blacktea.png" alt="" height="150" width="170">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Masala Chai</h3>
+                        <p class="text-gray-600 mt-2 ml-2">A warm and aromatic blend of tea, milk, and Indian spices. </p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹50</p>
+                    </div>
+                    <div class="border-1 border-red-950">
+                        <img src="masalachai.png" alt="" height="150" width="180">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Green Tea</h3>
+                        <p class="text-gray-600 mt-2 ml-2">A light and soothing tea with a fresh and delicate taste.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹60 </p>
+                    </div>
+                    <div class="border-1 border-red-950 h-32">
+                        <img src="greentea.png" alt="" height="150" width="227">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Lemon Tea</h3>
+                        <p class="text-gray-600 mt-2 ml-2">Refreshing black tea infused with a zesty touch of lemon.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹60 </p>
+                    </div>
+                    <div class="border-1 border-red-950 h-35 w-40">
+                        <img src="lemontea.png" alt="" width="120">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Cardamom Tea</h3>
+                        <p class="text-gray-600 mt-2 ml-2">Aromatic milk tea infused with the warm flavor of cardamom.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹70 </p>
+                    </div>
+                    <div class="border-1 border-red-950 h-31">
+                        <img src="caedomon.png" alt="" height="150" width="205">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Iced Tea</h3>
+                        <p class="text-gray-600 mt-2 ml-2">A chilled and refreshing tea served over ice.</p>
+                        <p class="text-red-900 font-bold mt-3 ml-2"> ₹100 </p>
+                    </div>
+                    <div class="border-1 border-red-950 ">
+                        <img src="icedtea.png" alt="" height="150" width="202">
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <!-- JUICE-->
+        <section class="mb-12">
+            <h2 class="text-3xl font-serif text-amber-100 mb-6 border-b-2 border-amber-100 pb-2"> Juices & Shakes </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Fresh Juices</h3>
+                        <p class="text-gray-600 mt-2 ml-2">Freshly squeezed juices made from ripe fruits for a naturally refreshing taste.</p><br>
+                        <p class="text-gray-600 mt-2 ml-2">• Mango Magic <span class="text-red-900 font-bold ml-35"> ₹80</span></p>
+                        <p class="text-gray-600 mt-2 ml-2"> • Watermelon Splash <span class="text-red-900 font-bold ml-26"> ₹60</span></p>
+                        <p class="text-gray-600 mt-2 ml-2">• Pineapple Punch <span class="text-red-900 font-bold ml-31"> ₹70</span></p>
+                        <p class="text-gray-600 mt-2 ml-2"> • Orange Fresh  <span class="text-red-900 font-bold ml-37"> ₹70</span></p>
+                        <p class="text-gray-600 mt-2 ml-2">• Grape Deligh <span class="text-red-900 font-bold ml-37"> ₹80</span></p>
+                        <p class="text-gray-600 mt-2 ml-2"> • Pomegranate Bliss <span class="text-red-900 font-bold ml-28"> ₹100</span></p>
+                        <p class="text-gray-600 mt-2 ml-2"> • Mixed Fruit Fusion <span class="text-red-900 font-bold ml-28"> ₹90</span></p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md p-5 flex  hover:scale-103 hover:shadow-xl">
+                    <div>
+                        <h3 class="text-xl font-semibold text-red-950">Shakes</h3>
+                        <p class="text-gray-600 mt-2 ml-2">Creamy, delicious milkshakes blended to perfection for a rich and satisfying treat.</p><br>
+                        <p class="text-gray-600 mt-2 ml-2">• Chocolate Shake <span class="text-red-900 font-bold ml-35"> ₹90</span></p>
+                        <p class="text-gray-600 mt-2 ml-2"> • Oreo Shake <span class="text-red-900 font-bold ml-44"> ₹100</span></p>
+                        <p class="text-gray-600 mt-2 ml-2">• Mango Shake <span class="text-red-900 font-bold ml-40"> ₹110</span></p>
+                        <p class="text-gray-600 mt-2 ml-2"> • Strawberry Shake  <span class="text-red-900 font-bold ml-34"> ₹80</span></p>
+                        <p class="text-gray-600 mt-2 ml-2">• Vanilla Dream <span class="text-red-900 font-bold ml-40"> ₹80</span></p>
+                        <p class="text-gray-600 mt-2 ml-2"> • Banana Cream Shake <span class="text-red-900 font-bold ml-27"> ₹100</span></p>
+                        <p class="text-gray-600 mt-2 ml-2"> • KitKat Shake <span class="text-red-900 font-bold ml-42"> ₹100</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+
+    </div>
+
+</body>
+
+</html>
+</body>
+
+</html>

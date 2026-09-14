@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="bg-amber-100">
+        <div class="flex bg-amber-100">
+            <img src="co.png" alt="coffee" class="ml-5 w-30 h-20 object-cover">
+            <div class="mx-50 my-auto">
+                 <a href="index.html" class="text-red-950 mx-5 text-lg fold-semibold hover:font-semibold cursor-pointer">Home</a>
+                <a href="menu.html" class="text-red-950  mx-5 text-lg fold-semibold hover:font-semibold cursor-pointer">Menu</a>
+                <a href="reservation.html" class="text-red-950 mx-5 text-lg fold-semibold hover:font-semibold cursor-pointer">Reservation</a>
+                <a href="contact.html" class="text-red-950 mx-5  text-lg fold-semibold hover:font-semibold cursor-pointer">Contact</a>
+                <a href="login.html" class="text-red-950 mx-5 text-lg fold-semibold hover:font-semibold cursor-pointer">login</a>
+            </div>
+            <div class="mt-6 mr-10 h-9 border-2 border-red-950 rounded-2xl px-3 pt-1">
+                <input type="text" placeholder="search...." class="placeholder:text-red-950 font-semibold outline-none">
+                <i class="fa fa-search" style="color: rgb(27, 0, 0); "></i>
+            </div>
+        </div>
+
+        <div class="min-h-screen bg-amber-100 flex items-center justify-center p-6">
+            <div class="bg-amber-900 rounded-2xl shadow-lg w-full max-w-3xl p-8">
+                <form action="">
+                <h1 class="text-3xl font-bold font-serif text-amber-100 mb-2">
+                    Make a Reservation
+                </h1>
+
+                <p class="text-amber-100 mb-8">
+                    Reserve your table in just a few steps.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-6 text-amber-100">
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">
+                            Date
+                        </label>
+                        <input type="date" class="w-full border rounded-lg p-3 focus:ring-2  bg-yellow-900" />
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">
+                            Time
+                        </label>
+                        <input type="time" class="w-full border rounded-lg p-3 focus:ring-2 bg-yellow-900"/>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">
+                            Guests
+                        </label>
+                        <select class="w-full border rounded-lg p-3 bg-yellow-900">
+                            <option>2 Guests</option>
+                            <option>3 Guests</option>
+                            <option>4 Guests</option>
+                            <option>5+ Guests</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2">
+                            Phone
+                        </label>
+                        <input type="tel" placeholder="Your phone number" class="w-full border rounded-lg p-3 bg-yellow-900" />
+                    </div>
+
+                </div>
+
+                <div class="mt-6 text-amber-100">
+                    <label class="block text-sm font-medium mb-2">
+                        Special Requests
+                    </label>
+
+                    <textarea rows="4" placeholder="Any special requests?"
+                        class="w-full border rounded-lg p-3"></textarea>
+                </div>
+
+                <button class="w-full mt-6 bg-amber-100 text-red-950 py-3 rounded-lg
+             font-semibold hover:bg-amber-100 transition">
+                    Confirm Reservation
+                </button>
+                </form>
+            </div>
+    
+    </div>
+    <div class="max-w-5xl mx-auto p-6">
+
+    <h2 class="text-2xl font-bold text-red-950 mb-6">
+        Reservation History
+    </h2>
+
+    <!-- Reservation Card -->
+    <div class="bg-white rounded-xl shadow-md p-6 mb-4 reservation-card">
+
+        <div class="flex flex-col md:flex-row md:justify-between gap-4">
+
+            <div>
+                <h3 class="text-lg font-semibold text-red-900">
+                    Dinner Reservation
+                </h3>
+
+                <div class="mt-3 text-red-800 space-y-2">
+                    <p>📅 September 15, 2026</p>
+                    <p>🕐 7:30 PM</p>
+                    <p>👥 4 Guests</p>
+                    <p>📍 Main Dining Area</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-start md:items-end gap-3">
+
+                <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
+                    Confirmed
+                </span>
+
+                <div class="flex gap-2">
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                        Edit
+                    </button>
+
+                    <button class="bg-red-100 text-red-600 px-4 py-2 rounded-lg hover:bg-red-200">
+                        Cancel
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Previous Reservation -->
+    <div class="bg-white rounded-xl shadow-md p-6 mb-4 reservation-card">
+
+        <div class="flex flex-col md:flex-row md:justify-between gap-4">
+
+            <div>
+                <h3 class="text-lg font-semibold text-red-950">
+                    Birthday Dinner
+                </h3>
+
+                <div class="mt-3 text-red-800 space-y-2">
+                    <p>📅 August 20, 2026</p>
+                    <p>🕐 8:00 PM</p>
+                    <p>👥 6 Guests</p>
+                    <p>📍 Private Dining Room</p>
+                </div>
+            </div>
+
+            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm h-fit">
+                Completed
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </div>
+</body>
+
+</html>
